@@ -2,37 +2,632 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  color: white;
+  font-weight: normal;
+  margin: 0 auto;
+  position: relative;
+  font-size: 2.5vw;
+  top: 0; left: 0em; bottom: 0; right: 0;
+  z-index: 1;
+}
+
+h3 {
+  color: white;
+  font-weight: 300;
+  position: relative;
+  font-size: 1vw;
+  top: -.3em; left: 12em; bottom: 0; right: 0em;
+  z-index: 1;
+}
+
+h5 {
+  left: 5%;
+}
+
+p {
+  font-size: .6vw;
+}
+
+.phone {
+  width: 30%;
+  padding: 0;
+}
+
+.pin {
+  width: 30%;
+  padding: 0;
+  left: 8%;
+  position: relative;
+}
+
+.svg {
+  height: 5vh;
+  width: 3vw;
+  position: relative;
+
+
+}
+
+.h1Title {
+  color: black;
+  font-weight: 400;
+  margin: 0 auto;
+  position: absolute;
+  font-size: 2.5vw;
+  top: -1.5em; left: 44%; bottom: 0; right: 0;
+  z-index: 1;
+}
+
+.features {
+  top: 11em;
+  width: 100%;
+  height: 10em;
+  position: relative;
+  margin: auto;
+}
+
+.featBorders{
+  border-right: 1px solid #a5a5a5;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.column i {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex-basis: 50%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hContainer {
+  display: -moz-stack;
+  position: relative;
+  top: -5em;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
   display: flex;
+  position: relative;
+  height: 10%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardDeal {
+  height: 60px;
+  background-color: black;
+  opacity: 0.7;
+  color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: 2;
+  font-size: 1.5em;
+  font-weight: 500;
+  position: absolute;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  width: 60%;
+  top: 5em;
+  left: 2.3em;
+  right: 2.3em;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 75%;
+  height: 5em;
+  top: 2.5em;
+  margin: auto;
+  position: absolute;
+  border-color: white;
+  background-color: white;
+  border-radius: 15px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+}
+
+.card-container {
+  display: flex;
+  position: relative;
+  top: 4.5em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cardQuestion {
+  flex: 1;
+  width: 14vw;
+  background-color: #fff;
+  position: relative;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 1.5vw;
+  margin-left: auto;
+  font-weight: 500;
+  width: 100%;
+  z-index: 1;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+.container-fluid {
+  top: 10rem;
+  border-bottom: 1px solid #a5a5a5;
+}
+
+.container-fluid-about {
+  top: 10rem;
+}
+
+.btn {
+  width: 15em;
+  height: 3em
+}
+
+.featCardBordersBtn{
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.featCardBordersNum{
+  border-right: 1px solid #a5a5a5;
+  line-height: 1;
+  width: 33%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.featCardBorders{
+  border-right: 1px solid #a5a5a5;
+  line-height: 1;
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  position: relative;
+  margin: auto;
+  top: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-body {
+  width: 80%;
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.4);
+  justify-content: space-around;
+  align-content: center;
+}
+
+.cardLocation {
+  padding: 2em;
+}
+
+.card-button {
+  background-color: #2267b4;
+  width: 100%;
+  height: 23%;
+  font-size: .7vw;
+  color: white;
+  border: 3px solid #cac9c9;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.cardSvg {
+  height: 4vh;
+  width: 2.2vw;
+  position: absolute;
+  left:-1em;
+  top: -1em;
+  border: 1em solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.buttonCard {
+  width: 210px;
+  height: 48px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 5px;
+}
+.background {
+  color: #fff;
+  height: 50vh;
+  width: 97.2vw;
+  position: relative;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 15px;
+  background: url(images/img_hero-overlay-min.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: 100%;
+  z-index: -1;
+  top: 3vh;
+}
+.questionsBackground {
+  color: #fff;
+  height: 40vh;
+  width: 97.2vw;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: url(images/img_wharehouse_bg.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: 100%;
+  z-index: -1;
+  top: 20vh;
+  bottom: 10vh;
+  border-bottom: 1px solid #a5a5a5;
+  margin-bottom: -2em;
+}
+
+.myButton {
+  color: #ffffff;
+  background: #2267b4; 
+  cursor:pointer;
+  margin-left: 2rem;
+  margin-top: -.5rem;
+  font-size: 20px; 
+  line-height: 20px; 
+  padding: 12px; 
+  border-radius: 50px; 
+  font-family: "Roboto", sans-serif;
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  border: 2px solid rgb(28, 110, 164); 
+  display: inline-block;}
+
+  .myButton2 {
+    color: #ffffff;
+    background: #a5a5a5; 
+    margin-left: 2.5rem;
+    margin-right: 2rem;
+    margin-top: -.5rem;
+    font-size: 20px; 
+    line-height: 20px; 
+    padding: 12px; 
+    border-radius: 50px; 
+    border: 2px solid rgb(255, 255, 255); 
+    font-family: "Roboto", sans-serif;
+    font-weight: normal; 
+    display: inline-block;}
+  .myButton2:hover a {
+  background: rgb(37, 65, 190); }
+  .myButton2:active {
+  background: #144E75; }
+
+  .myButtonTopCard {
+    color: #ffffff;
+    background: #2267b4;
+    position: relative;
+    font-size: 0.8vw;
+    z-index: 3;
+    width: 18vh;
+    padding: 10px;
+    cursor:pointer;
+    top: 33%;
+    border-radius: 10px;
+    margin: auto;
+    transform: translateY(-50%);
+    border-radius: 30px; 
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    border: 2px solid rgb(28, 110, 164); 
+  }
+  
+.logo {
+ width: 200px;
+ margin-top: 1.3rem;
+ padding: 0px;
+}
+
+ .navigation {
+     height: 80px;
+     background: white;
+     color: black;
+ }
+  
+  .footer {
+    height: 150px;
+     background: rgb(65, 64, 64);
+     color: white;
+     border-radius: 15px;
+  }
+     
+ .brand {
+     position: absolute;
+     padding-left: 20px;
+     float: left;
+     line-height: 55px;
+     font-size: 1.4em;
+     text-align: center;
+}
+.brand-footer {
+  position: absolute;
+  padding-left: 80px;
+  float: left;
+  line-height: 55px;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+ .brand a, .brand a:visited {
+     color: #ffffff;
+     text-decoration: none;
+}
+
+.image-fluid {
+  position: absolute;
+  padding: 11%;
+  top: 8em;
+  justify-content: right;
+  align-items: right;
+  display: -moz-grid-group;
+  left: 48%;
+}
+
+.map {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  top: 15.6em;
+  border-radius: 20px;
+}
+
+.demoImg {
+  width:  40vw;
+  margin-bottom: 20px;
+}
+
+.col-md-6 {
+  padding: 8em;
+  width: 50%;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+.aboutText {
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  position: relative;
+  text-align: left;
+  margin: -2em;
+  top: 2em;
+  justify-content: left;
+  align-content: left;
+  width: 40vw;
+  height: 23vw;
+  padding: 17.7%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.4);
+}
+
+.rowText {
+  display: flex;
+}
+
+.nav-listFooter {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ nav {
+     float: right;
+}
+ nav ul {
+     list-style: none;
+     margin: 2rem;
+     padding: 20;
+     margin-right: auto;
+     
+     
+}
+ nav ul li {
+     float: left;
+     position: relative;
+}
+ nav ul li a,nav ul li a:visited {
+     display: block;
+     padding: 0 20px;
+     line-height: 30px;
+     color: rgb(0, 0, 0);
+     background: #ffffff ;
+     text-decoration: none;
+     border-right-width: thin;
+     border-right-style: solid;
+     border-right-color: #2267b4;
+}
+ nav ul li a{
+     background: transparent;
+     /* color: #FFF; */
+}
+ nav ul li a:hover, nav ul li a:visited:hover {
+     background: #26a8df;
+     color: #ffffff;
+}
+ .navbar-dropdown li a{
+     background: #2581DC;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+}
+ nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+     padding-left: 4px;
+     content: ' \025BE';
+}
+ nav ul li ul li {
+     min-width: 190px;
+}
+ nav ul li ul li a {
+     padding: 15px;
+     line-height: 20px;
+}
+ .navbar-dropdown {
+     position: absolute;
+     display: none;
+     z-index: 1;
+     background: #fff;
+     box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
+}
+/* Mobile navigation */
+ .nav-mobile {
+     display: none;
+     position: absolute;
+     top: 3rem;
+     right: 2rem;
+     background: #26a8df;
+     height: 55px;
+     width: 70px;
+}
+ @media only screen and (max-width: 800px) {
+     .nav-mobile {
+         display: block;
+    }
+     nav {
+         width: 100%;
+         padding: 55px 0 15px;
+    }
+     nav ul {
+         display: none;
+    }
+     nav ul li {
+         float: none;
+    }
+     nav ul li a {
+         padding: 15px;
+         line-height: 20px;
+         background: #26a8df;
+    }
+     nav ul li ul li a {
+         padding-left: 30px;
+    }
+     .navbar-dropdown {
+         position: static;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ @media screen and (min-width:900px) {
+     .nav-list {
+         display: block !important;
+    }
 }
+ #navbar-toggle {
+     position: absolute;
+     left: 18px;
+     top: 15px;
+     cursor: pointer;
+     padding: 10px 35px 16px 0px;
+}
+ #navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
+     cursor: pointer;
+     border-radius: 1px;
+     height: 3px;
+     width: 30px;
+     background: #ffffff;
+     position: absolute;
+     display: block;
+     content: '';
+     transition: all 300ms ease-in-out;
+}
+ #navbar-toggle span:before {
+     top: -10px;
+}
+ #navbar-toggle span:after {
+     bottom: -10px;
+}
+ #navbar-toggle.active span {
+     background-color: transparent;
+}
+ #navbar-toggle.active span:before, #navbar-toggle.active span:after {
+     top: 0;
+}
+ #navbar-toggle.active span:before {
+     transform: rotate(45deg);
+}
+ #navbar-toggle.active span:after {
+     transform: rotate(-45deg);
+}
+ }
