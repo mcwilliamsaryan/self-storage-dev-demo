@@ -28,7 +28,7 @@ const Location = () => {
                                 </div>
 
                                 <div className="featCardBordersBtn"><button className="btn btn-primary rounded-pill" style={{ backgroundColor: '#2267b4' }}>
-                                    Contact
+                                    View Unit Rates
                 </button>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ const Location = () => {
 
                                 <div className="featCardBordersBtn">
                                     <button className="btn btn-primary rounded-pill" style={{ backgroundColor: '#2267b4' }}>
-                                        Contact
+                                        View Unit Rates
                                     </button>
                                 </div>
                             </div>
