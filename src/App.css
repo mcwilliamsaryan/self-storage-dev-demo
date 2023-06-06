@@ -106,6 +106,9 @@ p {
     height: 80px;
     width: 80px;
   }
+  .demoImg {
+    display: none;
+  }
 }
 
 .hContainer {
@@ -191,14 +194,15 @@ p {
   /* margin-right: 12rem; */
   /* top: 2em; */
   margin: 3rem;
-  margin-left: 16rem;
-  margin-right: 16rem;
+  /* margin-left: 16rem; */
+  /* margin-right: 16rem; */
   justify-content: left;
   align-content: left;
   /* max-width: 75%;
   max-height: 75%; */
   /* width: 40vw; */
   /* height: 23vw; */
+  font-size: 1.5vw;
   padding: 8%;
   padding-bottom: 5rem;
   border-radius: 15px;
@@ -216,8 +220,10 @@ p {
 .card-container {
   display: flex;
   /* position: relative; */
-  top: 4.5em;
+  /* top: 4.5em; */
   flex-wrap: wrap;
+  margin-top: 8em;
+  /* margin-bottom: 1em; */
   flex-direction: row;
   justify-content: space-evenly;
 }
