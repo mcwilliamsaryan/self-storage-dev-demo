@@ -4,11 +4,11 @@ const About = () => {
 
     return (
         <div class="container-fluid-about">
-            <div class="rowAbout">
-                <div class="card-container">
+            <div class="row rowAbout">
+                <div class="col-12 col-md-6 card-container demoImgWrapper">
                     <img className="demoImg" alt="storageLogo" src={demo}></img>
                 </div>
-                <div class="card-container">
+                <div class="col-12 col-md-6 card-container">
                     <div className="aboutText">
 
                         <h5 className="card-title">ABOUT US</h5>

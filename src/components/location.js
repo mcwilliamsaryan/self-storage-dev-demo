@@ -9,7 +9,7 @@ const Location = () => {
     return (
         <div className="container-fluid location">
             <div className="row">
-                <div className="col-md-7">
+                <div className="col-lg-7">
                     <div className="card-group location">
                         <div className="cardLocation">
                             <div className="card-body location">
@@ -24,10 +24,10 @@ const Location = () => {
                                     <div className="pin">
                                         <img src={phone} alt="phoneIcon" className="phone" />
                                     </div>
-                                    <h5>555-555-5555</h5>
+                                    <h5 className="phoneNumber">555-555-5555</h5>
                                 </div>
 
-                                <div className="featCardBordersBtn"><button className="btn btn-primary rounded-pill" style={{ backgroundColor: '#2267b4' }}>
+                                <div className="featCardBordersBtn"><button className="btn btn-primary rounded-pill">
                                     View Unit Rates
                 </button>
                                 </div>
@@ -46,11 +46,11 @@ const Location = () => {
                                     <div className="pin">
                                         <img src={phone} alt="icon" className="phone" />
                                     </div>
-                                    <h5>555-555-5555</h5>
+                                    <h5 className="phoneNumber">555-555-5555</h5>
                                 </div>
 
                                 <div className="featCardBordersBtn">
-                                    <button className="btn btn-primary rounded-pill" style={{ backgroundColor: '#2267b4' }}>
+                                    <button className="btn btn-primary rounded-pill">
                                         View Unit Rates
                                     </button>
                                 </div>
@@ -58,7 +58,7 @@ const Location = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-5">
+                <div className="col-lg-5 mapResize">
                     <img src={map} alt="Background Image" className="map" />
                 </div>
             </div>

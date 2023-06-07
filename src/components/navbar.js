@@ -60,12 +60,12 @@ class Navbar extends Component {
                                 <a href="#!">Contact</a>
                             </li>
                             <li>
-                                <button className="myButton" style={{ backgroundColor: '#2267b4' }}>
+                                <button className="myButton">
                                     Pay Online
                                     </button>
                             </li>
                             <li>
-                                <button className="myButton2" style={{ backgroundColor: '#f2f2f2', color: 'black' }}>
+                                <button className="myButton2">
                                     Give Us a Call: 555-555-5555
                                     </button>
                             </li>
